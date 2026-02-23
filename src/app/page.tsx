@@ -42,7 +42,7 @@ export default function Home() {
        ============================================================ */
     gsap.to(".progress-bar", {
       width: "100%",
-      duration: 1.9,
+      duration: 2.3,
       ease: "power1.inOut",
       onComplete: () => {
         gsap.to(".preloader", {
