@@ -5,9 +5,9 @@ import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Dr. Brijesh Kumar Jha | PhD Statistics Portfolio",
+  title: "Raghu VM Ganesh | Chemistry Portfolio",
   description:
-    "Academic portfolio of Dr. Brijesh Kumar Jha — PhD in Statistics, specializing in Statistical Inference, Bayesian Estimation, and Decision Theory.",
+    "Official academic portfolio of Raghu VM Ganesh — Assistant Professor at Krea University, specialist in Catalytic Nanomaterials and CO₂ Utilization.",
 };
 
 export default function RootLayout({

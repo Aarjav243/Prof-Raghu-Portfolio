@@ -36,3 +36,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local data
+scholar_pubs.json
+raghu png portfolio hero.zip
+desktop.ini
+/public/hero-pngs/.DS_Store
+/public/hero-images/.DS_Store
