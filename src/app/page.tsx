@@ -42,7 +42,7 @@ export default function Home() {
        ============================================================ */
     gsap.to(".progress-bar", {
       width: "100%",
-      duration: 4.2,
+      duration: 1.9,
       ease: "power1.inOut",
       onComplete: () => {
         gsap.to(".preloader", {
@@ -305,7 +305,7 @@ export default function Home() {
                   toggleActions: "play none none reverse",
                 },
                 strokeDashoffset: 0,
-                duration: 1.5,
+                duration: 1.9,
                 delay: Math.random() * 0.5,
                 ease: "power2.out",
               });

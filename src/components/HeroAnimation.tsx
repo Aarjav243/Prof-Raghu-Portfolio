@@ -10,7 +10,7 @@ export default function HeroAnimation() {
 
     // Preload images
     useEffect(() => {
-        const frameCount = 62;
+        const frameCount = 45;
         const loadedImages: HTMLImageElement[] = [];
 
         for (let i = 1; i <= frameCount; i++) {
@@ -55,7 +55,7 @@ export default function HeroAnimation() {
                 vCtx.drawImage(currentImg, x, y, currentImg.width * scale, currentImg.height * scale);
 
                 // Increment frame only if we haven't reached the last one
-                if (frameRef.current < 61) {
+                if (frameRef.current < 44) {
                     frameRef.current++;
                 }
             }
