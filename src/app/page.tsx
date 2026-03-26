@@ -463,8 +463,45 @@ export default function Home() {
     };
   });
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Raghu VM Ganesh",
+    "jobTitle": "Assistant Professor of Chemistry",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Krea University"
+    },
+    "url": "https://prof-raghu-portfolio.vercel.app/",
+    "image": "https://prof-raghu-portfolio.vercel.app/prof-raghu.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/raghu-ganesh",
+      "https://scholar.google.com/citations?hl=en&user=YZKUSRsAAAAJ",
+      "https://www.researchgate.net/profile/Raghu-Maligal-Ganesh"
+    ],
+    "description": "Assistant Professor of Chemistry at Krea University specializing in catalytic nanomaterials, CO₂ utilization, green hydrogen, and intermetallic nanoparticle synthesis.",
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Iowa State University" },
+      { "@type": "CollegeOrUniversity", "name": "Vellore Institute of Technology" }
+    ],
+    "knowsAbout": [
+      "Heterogeneous Catalysis",
+      "Catalytic Nanomaterials",
+      "CO2 Utilization",
+      "Green Hydrogen",
+      "Electrocatalysis",
+      "Metal-Organic Frameworks",
+      "Intermetallic Nanoparticles",
+      "Dry Reforming of Methane"
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* ============================
           PRELOADER
           ============================ */}
@@ -506,7 +543,7 @@ export default function Home() {
       {/* ============================
           MAIN CONTENT
           ============================ */}
-      <div
+      <main
         className="main-content"
         ref={scrollContainerRef}
         data-scroll-container
@@ -995,7 +1032,7 @@ export default function Home() {
             &copy; {new Date().getFullYear()} Raghu VM Ganesh. All rights reserved.
           </p>
         </footer>
-      </div>
+      </main>
     </>
   );
 }

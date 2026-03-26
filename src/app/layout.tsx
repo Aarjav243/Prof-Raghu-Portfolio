@@ -5,9 +5,62 @@ import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Raghu VM Ganesh | Chemistry Portfolio",
+  title: "Raghu VM Ganesh | Assistant Professor of Chemistry | Krea University",
   description:
-    "Official academic portfolio of Raghu VM Ganesh — Assistant Professor at Krea University, specialist in Catalytic Nanomaterials and CO₂ Utilization.",
+    "Official academic portfolio of Raghu VM Ganesh — Assistant Professor of Chemistry at Krea University. Expert in Catalytic Nanomaterials, CO₂ Utilization, Green Hydrogen, and Intermetallic Nanoparticles.",
+  keywords: [
+    "Raghu VM Ganesh",
+    "Raghu Maligal Ganesh",
+    "Assistant Professor Chemistry",
+    "Krea University",
+    "Catalytic Nanomaterials",
+    "CO2 Utilization",
+    "Green Hydrogen",
+    "Intermetallic Nanoparticles",
+    "Heterogeneous Catalysis",
+    "Dry Reforming Methane",
+    "Electrocatalysis",
+    "Metal-Organic Frameworks",
+    "Iowa State University Chemistry",
+    "KAUST Postdoctoral",
+  ],
+  authors: [{ name: "Raghu VM Ganesh" }],
+  creator: "Raghu VM Ganesh",
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://prof-raghu-portfolio.vercel.app/",
+    title: "Raghu VM Ganesh | Assistant Professor of Chemistry",
+    description:
+      "Official academic portfolio of Raghu VM Ganesh — Assistant Professor of Chemistry at Krea University. Expert in Catalytic Nanomaterials, CO₂ Utilization, and Green Hydrogen.",
+    siteName: "Raghu VM Ganesh Portfolio",
+    images: [
+      {
+        url: "https://prof-raghu-portfolio.vercel.app/prof-raghu.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Raghu VM Ganesh — Assistant Professor of Chemistry at Krea University",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Raghu VM Ganesh | Assistant Professor of Chemistry",
+    description:
+      "Official academic portfolio of Raghu VM Ganesh — Assistant Professor of Chemistry at Krea University. Expert in Catalytic Nanomaterials and CO₂ Utilization.",
+    images: ["https://prof-raghu-portfolio.vercel.app/prof-raghu.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
